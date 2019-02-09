@@ -1,4 +1,3 @@
-import subprocess
 import keyboard
 import psutil
 import os
