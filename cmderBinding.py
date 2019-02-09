@@ -1,12 +1,9 @@
 import subprocess
 import keyboard
 import psutil
+import os
 
-
-cmderIsRunning = "ConEmu64.exe" in (p.name() for p in psutil.process_iter())
-
-if cmderIsRunning:
-    keyboard.press_and_release('ctrl+`')
-else:
-    command = r"C:\Program Files (x86)\Cmder.exe"
-    subprocess.call([command, '/c'])
+keyboard.press_and_release('ctrl+`')
+runningCmder = "ConEmu64.exe" in (p.name() for p in psutil.process_iter())
+if not runningCmder:
+    os.startfile('E:/Program Files (x86)/Cmder/Cmder.exe')

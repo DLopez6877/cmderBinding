@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['cmderBinding.py'],
-             pathex=['E:\\my_projects\\pythonScripts'],
+             pathex=['E:\\my_projects\\pythonScripts\\cmderBinding'],
              binaries=[],
              datas=[],
              hiddenimports=[],
